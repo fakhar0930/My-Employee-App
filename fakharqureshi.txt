@@ -1,0 +1,16 @@
+I scream, you scream, we all scream for ice cream!
+Why did the chicken cross the road? To get to the other side!
+She sells seashells by the seashore.
+Peter Piper picked a peck of pickled peppers.
+A quick brown fox jumps over the lazy dog.
+To be or not to be, that is the question.
+Java is a versatile programming language.
+File I/O lets you read and write data to files.
+BufferedReader and BufferedWriter are efficient for text files.
+Practice makes perfect, especially with streams.
+Did you know? Java was originally called Oak.
+2025 is going to be an exciting year for technology!
+Remember to always close your streams.
+Appending text is easy once you know how.
+Exceptions like IOException must be handled.
+Learning by doing is the best approach!

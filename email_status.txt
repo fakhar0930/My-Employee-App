@@ -1,0 +1,5 @@
+fakhar@gmail.com - VALID
+wrong-email@@example..com - INVALID
+hello.world@yahoo.com - VALID
+user@domain - INVALID
+admin@openai.com - VALID
