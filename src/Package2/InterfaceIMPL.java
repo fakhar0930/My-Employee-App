@@ -7,37 +7,7 @@ public class InterfaceIMPL implements  Interface2, Interface1{
         System.out.println("Local Method");
     }
 
-    @Override
-    public void method1() {
 
-        System.out.println("Interface Tutorial");
-    }
-
-    @Override
-    public void method2() {
-        System.out.println("Interface Tutorial");
-    }
-
-    @Override
-    public void method3() {
-        System.out.println("Interface Tutorial");
-    }
-
-    @Override
-    public void method4() {
-        System.out.println("Interface Tutorial");
-    }
-
-    @Override
-    public void method5() {
-        System.out.println("Interface Tutorial");
-    }
-
-    @Override
-    public void method6() {
-        System.out.println("Interface Tutorial");
-
-    }
 
 
 //    public void method6() {
@@ -70,9 +40,31 @@ public class InterfaceIMPL implements  Interface2, Interface1{
         System.out.println("Interface Tutorial");
     }
 
+    @Override
+    public void draw() {
+        System.out.println("Draw Method");
+    }
+
+    @Override
+    public String getMessage() {
+        return Interface1.super.getMessage();
+    }
+
     public static void main(String[] args) {
         InterfaceIMPL interfaceIMPL = new InterfaceIMPL();
-        interfaceIMPL.method1();
+//        interfaceIMPL.method1();
         interfaceIMPL.localMethod();
+
+        Interface1.staticNethod("Fakhar");
+        System.out.println(Interface1.staticNethod("Fakhar"));
+
+        InterfaceIMPL interfaceIMPL1 = new InterfaceIMPL();
+        interfaceIMPL1.draw();
+
+        System.out.println(interfaceIMPL1.getMessage());
+
+
+//        System.out.println(interfaceIMPL1.draw());
+        interfaceIMPL1.draw();
     }
 }

@@ -1,13 +1,19 @@
 package Package2;
 
- interface Interface1 {
+import java.sql.Statement;
 
-    public void method1();
-     public void method2();
-     public void method3();
-     public void method4();
-     public void method5();
-     public void method6();
+interface Interface1 {
+
+    void draw();
+
+    default String getMessage(){
+     return "Default Method in INterface";
+    }
+    static String staticNethod(String name){
+     return name;
+    }
+
+
 
 
 }
