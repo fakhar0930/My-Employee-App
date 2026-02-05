@@ -10,18 +10,34 @@ public class ArrayIndexException  extends  Exception{
     }
 
     public static void main(String[] args) {
-        Map<Integer,String> map = new HashMap<>();
-        map.put(1,"Fakhar");
-        map.put(2,"Sanobar");
-        map.put(3,"KAreena");
-        map.put(4,"SHahnaaz");
-        map.put(5,"Naveen");
+        int a =10;
+        int b=0;
 
+        try {
+            if (b==0){
+                throw  new ArrayIndexException("Error:  B Is Zero");
+            }
+           int c= a/b;
+        } catch (ArrayIndexException e){
+            System.out.println(e.getMessage());
+        }
 
-        System.out.println(map.getOrDefault(6,"Hanzala"));
+        Thread t = new Thread(() -> {
+            for (int i = 1; i <= 10; i++) {
+                System.out.println("T1 Count: " + i);
+            }
+        });
+        t.start();
+        Thread t2 = new Thread(() -> {
+            for (int i = 1; i <= 10; i++) {
+                System.out.println("T2 Count: " + i);
+            }
+        });
+        t2.start();
 
-        System.out.println(map);
 
 
     }
+
+
 }

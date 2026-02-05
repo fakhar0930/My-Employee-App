@@ -11,6 +11,8 @@ public class MultiThreading1 extends  Thread{
                     e.printStackTrace();
                 }
             }
+
+            System.out.println("First Thread Completed________________________");
         });
 
 
@@ -26,6 +28,8 @@ public class MultiThreading1 extends  Thread{
                     e.printStackTrace();
                 }
             }
+            System.out.println("Second Thread Completed________________________");
+
         });
 
 
