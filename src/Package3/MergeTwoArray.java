@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class MergeTwoArray {
 
@@ -72,6 +73,52 @@ public class MergeTwoArray {
 
 
         map.forEach((key,Value)-> System.out.println(key + " -> " + Value));
+
+        int [] array= {0,1,0,3,12};
+
+        int counter2= array.length-1;
+
+
+        System.out.print("Before Array: ");
+        for (int i: array){
+            System.out.print(i + " ");
+        }
+
+        System.out.println();
+
+        int[] resultedArray = new int[array.length];
+
+        for (int i=0;i< array.length;i++){
+            if (array[i]==0){
+                resultedArray[counter2]=0;
+                counter2--;
+            }
+        }
+
+        for (int i=array.length-1;i>=0;i--){
+            if (array[i]>0){
+                resultedArray[counter2]=array[i];
+                counter2--;
+            }
+        }
+        System.out.print("Merged Array: ");
+        for (int i: resultedArray){
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        String s= "   Fakhar ";
+        System.out.println(s);
+        s=s.trim();
+
+
+
+        System.out.println(s.length());
+
+
+
+
+
 
     }
 }
