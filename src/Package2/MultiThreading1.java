@@ -41,7 +41,7 @@ public class MultiThreading1 extends  Thread{
 
 
             thread.join();
-            System.out.println("Main Thread Started");
+            System.out.println("Mainn Thread Started");
 //            System.out.println(Thread.getState());
 //
 //            thread1.join();
